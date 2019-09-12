@@ -1,0 +1,80 @@
+
+
+.about-us-page header {
+    /*mask: url(#image);*/
+    /*-webkit-mask: url(../img/aboutus-shape.svg) top left;*/
+    /*height: 38vw;*/
+    /*overflow: hidden;*/
+    /*box-sizing: border-box;*/
+    /*-webkit-mask-repeat: no-repeat;*/
+    /*-webkit-mask-clip: padding-box;*/
+    /* min-width: 100vw; */
+    /* margin-top: 0em; */
+    /* -webkit-mask-position: center; */
+    background: linear-gradient(#00000073, #00000094), url(../img/about-hero/about-bg.jpg) center no-repeat;
+     height: 100vh;
+    background-size: cover;
+    /*background-position: 100% 27%;*/
+    margin-bottom: 3em;
+    position: initial;
+}
+
+.about-us-page .about-text{
+    margin: 0 0 3em 0;
+}
+
+
+.our-history{
+    background: url(../img/our-history-shape.svg) center no-repeat;
+    background-size: cover;
+    height: 487px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-page #image{
+        mask: url(#image);
+        -webkit-mask: url(../img/aboutus-shape-small.svg) top left;
+        -webkit-mask-repeat: no-repeat;
+        height: 60vw;
+    }
+
+    .our-history{
+        height: 100%;
+    }
+
+    .timeline-tabs img{
+        width: 100%;
+    }
+
+    .our-history .nav-tabs .nav-item {
+        margin: 5px;
+        background-color: #f58634;
+        color: #fff;
+        border-radius: 5px;
+    }
+    .our-history .nav-tabs .nav-link{
+        color: #fff;
+    }
+
+    .our-history .nav-tabs {
+        margin: 1em 0;
+        border: none;
+    }
+
+    .timeline-tabs p{
+        padding: 1em 0 1em 0;
+    }
+}
+
+@supports (-ms-ime-align: auto) {
+    .about-us-page #image {
+        background: url("../img/ie-fallback-about-bg.png") center no-repeat;
+        height: 600px;
+    }
+
+}

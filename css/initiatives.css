@@ -1,0 +1,65 @@
+
+.initiatives-page #image {
+    mask: url(#image);
+    -webkit-mask: url(../img/aboutus-shape.svg) top left;
+    height: 38vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-clip: padding-box;
+    /* min-width: 100vw; */
+    /* margin-top: 0em; */
+    /* -webkit-mask-position: center; */
+    background: linear-gradient(#00000073, #00000094), url(../img/initiatives.jpg) center no-repeat;
+    /* height: 500px; */
+    background-size: cover;
+    background-position: 100% 27%;
+}
+
+.initiatives-page .initiatives-text{
+    margin: 0 0 3em 0;
+}
+
+.gallery .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    width: 71px;
+    height: 33px;
+    line-height: 8px;
+    background-color: #f58634;
+    font-size: 1.8em;
+    color: #ffffff;
+    border-radius: 0px;
+    border: 1px solid #f58634;
+}
+.gallery .owl-carousel .owl-nav  img{
+    width: 20px;
+
+}
+button:focus{
+    outline: none!important;
+}
+
+.initiatives-page .gallery{
+    padding: 0 0 2em 0;
+}
+
+@media screen and (max-width: 768px){
+    .initiatives-page #image{
+        mask: url(#image);
+        -webkit-mask: url(../img/aboutus-shape-small.svg) top left;
+        -webkit-mask-repeat: no-repeat;
+        height: 60vw;
+    }
+
+    .initiatives-page .initiatives-text{
+        margin: 0;
+    }
+}
+
+
+@supports (-ms-ime-align: auto) {
+    .initiatives-page #image {
+        background: url("../img/ie-fallback-initatives-bg.png") center no-repeat;
+        height: 600px;
+    }
+
+}

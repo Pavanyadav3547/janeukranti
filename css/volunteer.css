@@ -1,0 +1,110 @@
+.volunteer-page header {
+    background: linear-gradient(#00000073, #00000094), url(../img/syam-savek.jpg) center no-repeat;
+    /* height: 500px; */
+    background-size: cover;
+    height: 600px;
+    position: initial;
+}
+
+
+.volunteer-page .donation-cta{
+    border: 3px solid var(--orange);
+    padding: 2em;
+    margin-top: -10em;
+    background-color: #fff;
+}
+
+.volunteer-page .donation-cta input{
+    border: 1px solid #e8e0c9;
+    border-radius: 0;
+}
+
+.volunteer-page .donation-cta .form-group input{
+    border: none;
+    border-bottom: 1px solid #e8e0c9;
+}
+
+.volunteer-page .donation-cta .form-group select{
+    border: none;
+    border-bottom: 1px solid #e8e0c9;
+}
+
+
+.volunteer-page .donation-cta .amount-group{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.volunteer-page .donation-cta .amount-group button{
+    background-color: #fff;
+    border: 1px solid #e8e0c9;
+    font-size: .9em;
+}
+
+.volunteer-page .donate-section p{
+    padding: 0 4em 0 0;
+}
+
+.volunteer-page .donate-section h2{
+    margin: 1em 0 0 0;
+}
+
+.volunteer-page .offline-donation-list{
+    display: grid;
+    padding: 0;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+}
+
+.volunteer-page .offline-donation-list li{
+    list-style: none;
+    background-color: #e9e0ca;
+    padding: 1.5em;
+    text-align: center;
+    font-size: .9em;
+    font-family: "Lato", sans-serif;
+}
+
+.volunteer-page .offline-donation-list li figure h3{
+    margin: 1em 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.volunteer-page .offline-donate-section .icon-bg {
+    padding: 3em;
+    background-color: #f58634;
+    text-align: center;
+}
+
+.volunteer-page .offline-donate-section .icon-bg svg{
+    fill: #FFFFFF;
+    width: 35px;
+}
+
+.volunteer-page .offline-donate-section h2{
+    margin: 1.5em 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .volunteer-page .donation-cta{
+        margin: 0;
+    }
+
+    .volunteer-page .donate-section p {
+        padding: 0;
+    }
+
+    .volunteer-page .offline-donation-list{
+        display: block;
+    }
+
+    .volunteer-page .offline-donation-list li{
+        margin: 1em 0;
+    }
+
+}
